@@ -1,0 +1,61 @@
+.-------------------------------------------------------------------------------------------------------------------------.
+| Catalyst::Plugin::Authentication  0.10018                                                                               |
+| Catalyst::Plugin::Authorization::Roles  0.09                                                                            |
+| Catalyst::Plugin::ConfigLoader  0.30                                                                                    |
+| Catalyst::Plugin::Session  0.31                                                                                         |
+| Catalyst::Plugin::Session::State::Cookie  0.17                                                                          |
+| Catalyst::Plugin::Session::Store::File  0.18                                                                            |
+| Catalyst::Plugin::StackTrace  0.10                                                                                      |
+'-------------------------------------------------------------------------------------------------------------------------'
+
+[info] Loaded dispatcher "Catalyst::Dispatcher"
+[info] Loaded engine "Catalyst::Engine"
+[info] Found home "/home/bobby/Projects/parameter"
+[debug] Loaded Config "/home/bobby/Projects/parameter/parameter.conf"
+[debug] Setting up auth realm members
+[debug] CouchDB::Client instantiated
+[debug] Loaded components:
+.--------------------------------------------------------------------------------------------------------------+----------.
+| Class                                                                                                        | Type     |
++--------------------------------------------------------------------------------------------------------------+----------+
+| parameter::Controller::Login                                                                                 | instance |
+| parameter::Controller::Logout                                                                                | instance |
+| parameter::Controller::Root                                                                                  | instance |
+| parameter::Controller::Site                                                                                  | instance |
+| parameter::Controller::User                                                                                  | instance |
+| parameter::Model::User                                                                                       | instance |
+| parameter::View::TT                                                                                          | instance |
+'--------------------------------------------------------------------------------------------------------------+----------'
+
+[debug] Loaded Private actions:
+.------------------------------+----------------------------------------------------------+-------------------------------.
+| Private                      | Class                                                    | Method                        |
++------------------------------+----------------------------------------------------------+-------------------------------+
+| /default                     | parameter::Controller::Root                              | default                       |
+| /end                         | parameter::Controller::Root                              | end                           |
+| /index                       | parameter::Controller::Root                              | index                         |
+| /auto                        | parameter::Controller::Root                              | auto                          |
+| /site/index                  | parameter::Controller::Site                              | index                         |
+| /user/add                    | parameter::Controller::User                              | add                           |
+| /user/index                  | parameter::Controller::User                              | index                         |
+| /user/list                   | parameter::Controller::User                              | list                          |
+| /login/index                 | parameter::Controller::Login                             | index                         |
+| /logout/index                | parameter::Controller::Logout                            | index                         |
+'------------------------------+----------------------------------------------------------+-------------------------------'
+
+[debug] Loaded Path actions:
+.------------------------------------------------------------+------------------------------------------------------------.
+| Path                                                       | Private                                                    |
++------------------------------------------------------------+------------------------------------------------------------+
+| /                                                          | /index                                                     |
+| /...                                                       | /default                                                   |
+| /login/                                                    | /login/index                                               |
+| /logout/                                                   | /logout/index                                              |
+| /site/                                                     | /site/index                                                |
+| /user/                                                     | /user/index                                                |
+| /user/add/...                                              | /user/add                                                  |
+| /user/list/...                                             | /user/list                                                 |
+'------------------------------------------------------------+------------------------------------------------------------'
+
+[info] parameter powered by Catalyst 5.90010
+[debug] Debug messages enabled
